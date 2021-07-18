@@ -168,7 +168,7 @@
   font-size: 20px;
   font-family: Hack, sans-serif;
   text-transform: uppercase;
-  background: linear-gradient(90deg, rgb(252, 248, 1), rgb(10, 10, 10), rgb(238, 10, 10));
+  background: rgb(155,255,0);
   letter-spacing: 2px;
   -webkit-background-clip: text;
   background-clip:text;

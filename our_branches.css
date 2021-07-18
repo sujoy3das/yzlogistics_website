@@ -142,6 +142,7 @@
   } 
 }
 
+/* For Animated Card */
 
 /* Code for Contact us button Row */
 .contact-us-btn-row{
@@ -365,3 +366,16 @@ h5::before {
 
 /* End Whatsapp Code */
 
+.zoom {
+  padding: 20px;
+  background-color: rgb(194, 196, 194);
+  transition: transform .2s; /* Animation */
+  width: 240px;
+  height: 200px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom)*/
+}
