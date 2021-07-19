@@ -169,6 +169,10 @@
 						<div class="sec2addr">
 							<p>YZ LOGISTICS<br>
                 11/12/5 MOLLAPARA LANE SHIBPUR, HOWARAH -711102
+                <?php
+                echo "Hello world"
+
+                ?>
               </p>
 							<p><span class="collig">Phone :</span> +91 9064682990</p>
 							<p><span class="collig">Email :</span>info@yzlogistics.in</p>
@@ -177,20 +181,56 @@
 					</div>
 					<div class="sec2contactform">
 						<h3 class="sec2frmtitle">Drop Us a Mail for Quote</h3>
-						<form action="">
+						<form action="" method="post">
 							<div class="clearfix">
-								<input class="col2 first" type="text" placeholder="FirstName">
-								<input class="col2 last" type="text" placeholder="LastName">
+								<input class="col2 first" type="text" placeholder="FirstName" name="first_name">
+								<input class="col2 last" type="text" placeholder="LastName" name="last_name">
 							</div>
 							<div class="clearfix">
-								<input  class="col2 first" type="Email" placeholder="Email">
-								<input class="col2 last" type="text" placeholder="Contact Number">
+								<input  class="col2 first" type="Email" placeholder="Email" name="email">
+								<input class="col2 last" type="text" placeholder="Contact Number" name="contact">
 							</div>
 							<div class="clearfix">
-								<textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+								<textarea name="textarea" id="" cols="30" rows="7" >Your message here...</textarea>
 							</div>
-							<div class="clearfix"><input type="submit" value="Send"></div>
+							<div class="clearfix">
+              <input type="submit" name="send" class="btn-submit"
+                    value="Send" />
+                <div id="statusMessage"> 
+                        <?php
+                        if (! empty($message)) {
+                            ?>
+                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
+                        <?php
+                        }
+                        ?>
+                    </div>
+
+              </div>
+             
 						</form>
+
+
+            <?php
+              if(!empty($_POST["send"])) {
+                $first_name = $_POST["first_name"];
+                $last_name = $_POST["last_name"];
+                $email = $_POST["email"];
+                $contact = $_POST["contact"];
+                $content = $_POST["textarea"];
+                $toEmail = "info@bataitech.com";
+                $subject="Enquiry";
+
+                
+                $mailHeaders = "From: " . $first_name." ". $last_name  . "<". $email .">\r\n";
+                if(mail($toEmail, $subject, $content, $mailHeaders)) {
+                    $message = "Your contact information is received successfully.";
+                    $type = "success";
+                }
+              }
+              require_once "contact-view.php";
+            ?>
+            
 					</div>
 
 				</div>
@@ -263,6 +303,8 @@
 	  }
   })
 })
+
+
   </script>
 </body>
 </html>
