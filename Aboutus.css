@@ -63,36 +63,6 @@
     /* filter: sepia(60%) hue-rotate(120deg) saturate(0%); */
 }
 
-/* For Sliding Text */
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; 
-  background-size: cover;
-}
-.carousel-caption {
-  bottom: 270px;
-}
-
-.carousel-caption h5 {
-  font-size: 35px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.carousel-caption p {
-  width: 75%;
-  margin: auto;
-  font-size: 28px;
-  line-height: 1.9;
-  font-style: oblique;
-  color: yellow;
-}
-
 .btn-min-block {
   min-width: 220px;
   line-height: 50px;
