@@ -107,31 +107,6 @@
 
 
 /* For Text Effect sub heading */
-.carousel-caption p {
-  font-weight: 700;
-  text-align: center;
-  font-size: 20px;
-  font-family: Hack, sans-serif;
-  text-transform: uppercase;
-  background: rgb(155,255,0);
-  letter-spacing: 2px;
-  -webkit-background-clip: text;
-  background-clip:text;
-  -webkit-text-fill-color: transparent;
-  background-repeat: repeat;
-  background-size: 80%;
-  animation: shine 15s linear infinite;
-  position: relative;
-}
-
-@keyframes shine {
-  0% {
-    background-position-x: -500%;
-  }
-  100% {
-    background-position-x: 500%;
-  }
-}
 
 /* For Main Heading */
 #sub-head{
