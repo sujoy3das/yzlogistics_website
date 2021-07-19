@@ -63,84 +63,30 @@
     /* filter: sepia(60%) hue-rotate(120deg) saturate(0%); */
 }
 
-/* For Sliding Text */
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; 
-  background-size: cover;
-}
-.carousel-caption {
-  bottom: 270px;
-}
-
-.carousel-caption h5 {
-  font-size: 35px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.carousel-caption p {
-  width: 75%;
-  margin: auto;
-  font-size: 28px;
-  line-height: 1.9;
-  font-style: oblique;
-  color: yellow;
-}
-
 .btn-min-block {
-  min-width: 170px;
-  line-height: 20px;
+  min-width: 220px;
+  line-height: 50px;
 }
 
 .btn-theme {
-  color: #fff;
-  background-color: transparent;
+  color:darkblue;
+  background-color: rgb(179,236,8);
   border: 2px solid #fff;
   margin-right: 15px;
   margin-top: 5px;
+  /* padding: 20px 80px; */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-bottom: 10px;
 }
 
 .btn-theme:hover {
-  color: #000;
-  background-color: #fff;
+  color: rgb(179,236,8);
+  background-color: rgb(90, 90, 90);
   border-color: #fff;
 }
 
-/* Media Query For Sliding Text */
-@media screen and (max-width: 600px) {
-  .carousel-item {
-    height: 80vh;
-    min-height: 250px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-    background-size: cover;
-  }
-  .carousel-caption {
-    bottom: 150px;
-  }
-  
-  .carousel-caption h5 {
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .carousel-caption p {
-    width: 75%;
-    margin: auto;
-    font-size: 15px;
-    line-height: 1.2;
-    font-style: oblique;
-  } 
-}
 
 
 /* Code for Contact us button Row */
@@ -188,23 +134,59 @@
 }
 
 /* For Main Heading */
-/* :root {
-  --primary-color: #6CD9CE;
-  --secondary-color: #D93BA1;
-  --complimentary-color: #2E2473;
-} */
-
-h5 {
-  font-size: 150px;
+#sub-head{
+  font-size: 50px;
+  color: rgb(179,236,8);
+  font-family:helvetica;
+}
+/* For Main Text */
+.main-text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+}
+@media only screen and (max-width:600px) {
+  .main-text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .main-text h5 {
+    font-size:20px;
+    color: var(--primary-color);
+    transform: translateY(-600px);
+    animation:.5s slideIn ease-in-out forwards 1s;
+    z-index: 10;
+    opacity: 0;
+    position: relative;
+  }
+  #sub-head{
+    font-size: 30px;
+    color: rgb(179,236,8);
+    font-family:helvetica;
+  }
+  
+}
+.main-text h5 {
+  font-size:45px;
   color: var(--primary-color);
   transform: translateY(-600px);
-  animation: 1.2s slideIn ease-in-out forwards 1s;
+  animation:.5s slideIn ease-in-out forwards 1s;
   z-index: 10;
   opacity: 0;
   position: relative;
 }
 
-h5::before {
+.main-text h5::before {
     content: '';
     width: 0%;
     height: 76px;
@@ -215,7 +197,7 @@ h5::before {
     mix-blend-mode: screen;
 }
 
-.overlay {
+.main-text .overlay {
     position: absolute;
     width: 100%;
     top: 0;
