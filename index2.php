@@ -17,7 +17,7 @@
 </head>
 <body>
   <!-- For Whatsapp -->
-  <a href='https://wa.me/+919064682990' target='_blank' class="float"><i class= "fa fa-whatsapp my-float"></i></a>
+  <a href='https://wa.me/+91' target='_blank' class="float"><i class= "fa fa-whatsapp my-float"></i></a>
 <!-- End Whatsapp Code -->
   <div id="back-image">
     <div class="fixed-top back-color">
@@ -27,7 +27,7 @@
       <div class="col bg-primary w-50 float-lg-left" style="margin-top: 60px;" id="big-screen">
         <nav class="navbar navbar-expand-lg" style="padding-top:20px;padding-bottom: 20px;background-color: darkblue;">   
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
+              <li class="nav-item active">
                 <a class="nav-link text-white" href="index.php">Home</a>
               </li>
               <li class="nav-item">
@@ -45,44 +45,38 @@
             </ul>
         </nav>
       </div>
-      <!-- Navbar For Small Screen -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100" id="small-screen">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100" id="small-screen">
       <a href="index.php"><img src="/Image/YZ_Logo2.png" alt="" style="width: 180px;height: 120px;"></a>
       <button class="navbar-toggler float-sm-right bg-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"></span>
       </button>
     
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="background-color:darkblue">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link text-white" href="index.php">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="aboutus.php">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="services.php">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="our_branches.php">Our Branches</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="contact_us.php">Contact Us</a>
-              </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="index.php">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="aboutus.php">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="services.php">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="our_branches.php">Our Branches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact_us.php">Contact Us</a>
+          </li>
         </ul>
       </div>
     </nav>
-    </div>
-    
     <Div class="main-text">
       <h5>
         YZ Logistics
       </h5>
-      <hr style="width: 30%;border: 2px solid brown;">
       <h6 id="sub-head">TIME IS MONEY, WE SAVE BOTH</h6>
-      <h4 id="sub-head1">
-        A FAST GROWING LOGISTICS COMPANY
-      </h4>
       <a class="btn btn-theme btn-sm btn-min-block" href="contact_us.php">Make a Quote</a>
     </Div>
   </div>    
@@ -139,7 +133,7 @@
 
   </div>
   <!-- End Flip Card -->
-  <div class="row contact-us-btn-row bg-dark" >
+  <div class="row contact-us-btn-row">
     <h6>We are honored to be a leading and reliable partner in the field of logistics in INDIA</h6>
     <div class="">
       <a class="btn btn-theme btn-sm btn-min-block" href="contact_us.php">Contact Us</a>
@@ -175,6 +169,10 @@
 						<div class="sec2addr">
 							<p>YZ LOGISTICS<br>
                 11/12/5 MOLLAPARA LANE SHIBPUR, HOWARAH -711102
+                <?php
+                echo "Hello world"
+
+                ?>
               </p>
 							<p><span class="collig">Phone :</span> +91 9064682990</p>
 							<p><span class="collig">Email :</span>info@yzlogistics.in</p>
@@ -185,40 +183,47 @@
 						<h3 class="sec2frmtitle">Drop Us a Mail for Quote</h3>
 						<form action="" method="post">
 							<div class="clearfix">
-								<input class="col2 first" type="text" placeholder="FirstName" name="firstname">
-								<input class="col2 last" type="text" placeholder="LastName" name="lastname">
+								<input class="col2 first" type="text" placeholder="FirstName" name="first_name">
+								<input class="col2 last" type="text" placeholder="LastName" name="last_name">
 							</div>
 							<div class="clearfix">
 								<input  class="col2 first" type="Email" placeholder="Email" name="email">
 								<input class="col2 last" type="text" placeholder="Contact Number" name="contact">
 							</div>
 							<div class="clearfix">
-								<textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+								<textarea name="textarea" id="" cols="30" rows="7" >Your message here...</textarea>
 							</div>
-							<div class="clearfix"><input type="submit" value="Send" name="send"></div>
+							<div class="clearfix">
+              <input type="submit" name="send" class="btn-submit"
+                    value="Send" />
+                <div id="statusMessage"> 
+                        
+
+              </div>
+             
 						</form>
+
+
             <?php
-              if(isset($_POST['send'])){
-                 
-                $from = $_POST['email']; 
-                $to = "info@yzlogistics.in";
-                $subject ='Enquiry';
-                $name = $_POST['firstname']." ".$_POST['lastname']; 
-                $email = $_POST['email']; 
-                $phone = $_POST['contact'];
-                $message = $_POST['textarea']; 
+              if(!empty($_POST["send"])) {
+                $first_name = $_POST["first_name"];
+                $last_name = $_POST["last_name"];
+                $email = $_POST["email"];
+                $contact = $_POST["contact"];
+                $content = $_POST["textarea"];
+                $toEmail = "info@bataitech.com";
+                $subject="Enquiry";
+
                 
-                  ini_set( 'display_errors', 1 );
-                  error_reporting( E_ALL );
-                  $body = "From: $name\n E-Mail: $email\n Contact: $phone\n Message:\n $message";
-                  $headers = "From:" . $from ;
-                  if(mail($to,$subject,$body, $headers)) {
-                  echo "<b>Thanks for sending us enquiry. Will respond you shortly.</b>";
-                  } else {
-                    echo "<b>The message was not sent.</b>";
-                  }
+                $mailHeaders = "From: " . $first_name." ". $last_name  . "<". $email .">\r\n";
+                if(mail($toEmail, $subject, $content, $mailHeaders)) {
+                    $message = "Your contact information is received successfully.";
+                    $type = "success";
                 }
+              }
+              // require_once "contact-view.php";
             ?>
+            
 					</div>
 
 				</div>
@@ -245,7 +250,7 @@
                 <div class="col-sm-6 col-md-3 item">
                     <h3>About</h3>
                     <ul>
-                    <li><a href="index.php">Home</a></li>
+                      <li><a href="index.php">Home</a></li>
                       <li><a href="aboutus.php">About Us</a></li>
                       <li><a href="services.php">Service</a></li>
                       <li><a href="our_branches.php">Our Branches</a></li>
@@ -290,7 +295,9 @@
 		  $(".back-color").css("background" , "none");  	
 	  }
   })
-})
+});
+
+
   </script>
 </body>
 </html>

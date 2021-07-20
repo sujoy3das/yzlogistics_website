@@ -17,69 +17,71 @@
 </head>
 <body>
 <!-- For Whatsapp -->
-<a href='https://wa.me/+91' target='_blank' class="float"><i class= "fa fa-whatsapp my-float"></i></a>
+<a href='https://wa.me/+919064682990' target='_blank' class="float"><i class= "fa fa-whatsapp my-float"></i></a>
 <!-- End Whatsapp Code -->
   <div id="back-image">
     <div class="fixed-top back-color">
       <div class="col bg-transparent w-50 float-lg-left" id="big-screen">
-        <a href="#"><img src="/Image/YZ_Logo2.png" alt="" style="width: 170px;height:150px;margin: 20px 20px;"></a>
+        <a href="index.php"><img src="/Image/YZ_Logo2.png" alt="" style="width: 170px;height:150px;margin: 20px 20px;"></a>
       </div>
       <div class="col bg-primary w-50 float-lg-left" style="margin-top: 60px;" id="big-screen">
-        <nav class="navbar navbar-expand-lg" style="padding-top:20px;padding-bottom: 20px;background-color: darkblue;">   
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link text-white" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="Aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="Services.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="our_branches.html">Our Branches</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="Contact_us.html">Contact Us</a>
-              </li>
-            </ul>
-        </nav>
+          <nav class="navbar navbar-expand-lg" style="padding-top:20px;padding-bottom: 20px;background-color: darkblue;">   
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link text-white" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="aboutus.php">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="services.php">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="our_branches.php">Our Branches</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact_us.php">Contact Us</a>
+                </li>
+              </ul>
+         </nav>
       </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100" id="small-screen">
-      <a href="#"><img src="/Image/YZ_Logo2.png" alt="" style="width: 180px;height: 120px;"></a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100" id="small-screen">
+      <a href="index.php"><img src="/Image/YZ_Logo2.png" alt="" style="width: 180px;height: 120px;"></a>
       <button class="navbar-toggler float-sm-right bg-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon text-white"></span>
       </button>
     
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="background-color:darkblue">
+  
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="index.html">Home</a>
+            <a class="nav-link text-white" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="Aboutus.html">About Us</a>
+            <a class="nav-link text-white" href="aboutus.php">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="Services.html">Services</a>
+            <a class="nav-link text-white" href="services.php">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="our_branches.html">Our Branches</a>
+            <a class="nav-link text-white" href="our_branches.php">Our Branches</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="Contact_us.html">Contact Us</a>
+            <a class="nav-link text-white" href="contact_us.php">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
-    <Div class="main-text">
+    </div>
+    
+    <div class="main-text">
       <h5>
         About Us
       </h5>
       <hr style="width: 30%;border: 2px solid brown;">
-      <!-- <h6 id="sub-head">TIME IS MONEY, WE SAVE BOTH</h6> -->
-      <a class="btn btn-theme btn-sm btn-min-block" href="#">Make a Quote</a>
-    </Div>
+      <h6 id="sub-head">It is certainly a company where all of freight forwarding and logistics requirements are fulfilled as per client-needs.</h6>
+      <a class="btn btn-theme btn-sm btn-min-block" href="contact_us.php">Make a Quote</a>
+    </div>
   </div> 
   <!-- Code For Home Page Main Area -->
   <div class="row">
@@ -114,13 +116,7 @@
       </div>
     </div>
   </div>
-  <div class="row contact-us-btn-row">
-    <h6>We are honored to be a leading and reliable partner in the field of logistics in INDIA</h6>
-    <div class="">
-      <!-- <a class="btn btn-theme btn-sm btn-min-block" href="#">Contact Us</a> -->
-      <a class="btn btn-theme btn-sm btn-min-block" href="#">Make a Quote</a>
-    </div>
-  </div>
+
   </div>
   
   <!-- Footer Start -->

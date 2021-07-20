@@ -110,27 +110,31 @@
 
 /* For Text Effect sub heading */
 
-/* For Main Heading */
+/* For Sub Heading */
 #sub-head{
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(179,236,8);
+  font-weight: bold;
   font-family:helvetica;
+  margin-left: 7%;
+
 }
 /* For Main Text */
 .main-text{
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 30%;
   transform: translate(-50%, -50%);
   color: white;
   text-transform: uppercase;
 }
+
 @media only screen and (max-width:600px) {
   .main-text{
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -138,6 +142,7 @@
   }
   
   .main-text h5 {
+    
     font-size:20px;
     color: var(--primary-color);
     transform: translateY(-600px);
@@ -147,14 +152,17 @@
     position: relative;
   }
   #sub-head{
-    font-size: 30px;
+    font-size: 15px;
     color: rgb(179,236,8);
+    font-weight: bold;
     font-family:helvetica;
+    margin-left: 5%;
   }
   
 }
 .main-text h5 {
   font-size:45px;
+  
   color: var(--primary-color);
   transform: translateY(-600px);
   animation:.5s slideIn ease-in-out forwards 1s;

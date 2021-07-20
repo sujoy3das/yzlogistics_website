@@ -57,7 +57,7 @@
   background-image: url(/Image/wp3704690.png);
   background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     /* filter: grayscale(60%); */
     /* filter: sepia(60%) hue-rotate(120deg) saturate(0%); */
@@ -360,25 +360,45 @@ input:focus, textarea:focus, keygen:focus, select:focus {
 }
 /* For Main Heading */
 #sub-head{
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(179,236,8);
+  font-weight: bold;
   font-family:helvetica;
+  /* margin-left: 5%; */
+
 }
 /* For Main Text */
 .main-text{
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 30%;
   transform: translate(-50%, -50%);
   color: white;
   text-transform: uppercase;
 }
+/* P */
+.main-text p{
+  font-size: 18px;
+
+}
+
+
+.main-text h5 {
+  font-size:45px;  
+  color: var(--primary-color);
+  transform: translateY(-600px);
+  animation:.5s slideIn ease-in-out forwards 1s;
+  z-index: 10;
+  opacity: 0;
+  position: relative;
+}
+
 @media only screen and (max-width:600px) {
   .main-text{
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -386,7 +406,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   }
   
   .main-text h5 {
-    font-size:20px;
+    font-size:25px;
     color: var(--primary-color);
     transform: translateY(-600px);
     animation:.5s slideIn ease-in-out forwards 1s;
@@ -395,21 +415,19 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     position: relative;
   }
   #sub-head{
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(179,236,8);
+    font-weight: bold;
     font-family:helvetica;
+  }
+  .main-text p{
+    font-size: 12px;
+  
   }
   
 }
-.main-text h5 {
-  font-size:45px;
-  color: var(--primary-color);
-  transform: translateY(-600px);
-  animation:.5s slideIn ease-in-out forwards 1s;
-  z-index: 10;
-  opacity: 0;
-  position: relative;
-}
+
+
 
 .main-text h5::before {
     content: '';
@@ -434,6 +452,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
     transform: scale(.5);
     animation: .5s slideIn ease-in-out forwards, 1s skewBg ease-in-out;
 }
+
 
 @keyframes skewBg {
   0% {

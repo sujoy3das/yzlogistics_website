@@ -17,68 +17,70 @@
 </head>
 <body>
   <!-- For Whatsapp -->
-  <a href='https://wa.me/+91' target='_blank' class="float"><i class= "fa fa-whatsapp my-float"></i></a>
+  <a href='https://wa.me/+919064682990' target='_blank' class="float"><i class= "fa fa-whatsapp my-float"></i></a>
 <!-- End Whatsapp Code -->
 <div id="back-image">
   <div class="fixed-top back-color">
     <div class="col bg-transparent w-50 float-lg-left" id="big-screen">
-      <a href="#"><img src="/Image/YZ_Logo2.png" alt="" style="width: 170px;height:150px;margin: 20px 20px;"></a>
+      <a href="index.php"><img src="/Image/YZ_Logo2.png" alt="" style="width: 170px;height:150px;margin: 20px 20px;"></a>
     </div>
     <div class="col bg-primary w-50 float-lg-left" style="margin-top: 60px;" id="big-screen">
       <nav class="navbar navbar-expand-lg" style="padding-top:20px;padding-bottom: 20px;background-color: darkblue;">   
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Aboutus.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="our_branches.html">Our Branches</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="Contact_us.html">Contact Us</a>
-            </li>
+        <li class="nav-item active">
+                <a class="nav-link text-white" href="index.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="aboutus.php">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="services.php">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="our_branches.php">Our Branches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact_us.php">Contact Us</a>
+              </li>
           </ul>
       </nav>
     </div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100" id="small-screen">
-    <a href="#"><img src="/Image/YZ_Logo2.png" alt="" style="width: 180px;height: 120px;"></a>
+    <!-- For Small screen Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100" id="small-screen">
+    <a href="index.php"><img src="/Image/YZ_Logo2.png" alt="" style="width: 180px;height: 120px;"></a>
     <button class="navbar-toggler float-sm-right bg-white" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon text-white"></span>
     </button>
   
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="background-color:darkblue">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link text-white" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="Aboutus.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="Services.html">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="our_branches.html">Our Branches</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="Contact_us.html">Contact Us</a>
-        </li>
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="index.php">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="aboutus.php">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="services.php">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="our_branches.php">Our Branches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact_us.php">Contact Us</a>
+              </li>
       </ul>
     </div>
   </nav>
+  </div>
+  
   <Div class="main-text">
     <h5>
       Our Branches
     </h5>
     <hr style="width: 30%;border: 2px solid brown;">
-    <!-- <h6 id="sub-head">TIME IS MONEY, WE SAVE BOTH</h6> -->
-    <a class="btn btn-theme btn-sm btn-min-block" href="#">Make a Quote</a>
+    <h6 id="sub-head">WE HAVE BRANCHES ACCROSS INDIA WHICH ACCELARATE QUICK AND SAFE DELIVERY.</h6>
+    <a class="btn btn-theme btn-sm btn-min-block" href="contact_us.php">Make a Quote</a>
   </Div>
 </div> 
   <!-- Code For Home Page Main Area -->
@@ -259,22 +261,13 @@
                 </div>
                 <div class="col-sm-6 col-md-3 item">
                     <h3>About</h3>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item active">
-                        <a class="nav-link text-white" href="index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="Aboutus.html">About Us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="Services.html">Services</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="our_branches.html">Our Branches</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link text-white" href="Contact_us.html">Contact Us</a>
-                      </li>
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
+                    <li><a href="services.php">Service</a></li>
+                    <li><a href="our_branches.php">Our Branches</a></li>
+                    <li><a href="contact_us.php">Contact Us</a></li>
+    
                     </ul>
                 </div>
                 <div class="col-md-6 item text">
